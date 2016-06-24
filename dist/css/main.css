@@ -95,6 +95,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*/// CUSTOM FONT AVENIR ///*/
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Avenir-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Avenir-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Avenir-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Avenir-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 
 

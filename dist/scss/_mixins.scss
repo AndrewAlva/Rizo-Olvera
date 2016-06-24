@@ -21,3 +21,8 @@
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
 	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
 }
+
+@mixin fillContainer(){
+	width: 100%;
+	height: 100%;
+}

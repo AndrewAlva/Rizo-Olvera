@@ -1,2 +1,266 @@
 @import 'mixins';
 
+$fullWidth: 1100px;
+$halfWidth: ($fullWidth / 2) ;
+$mRight: 90px;
+$mLeft: 90px;
+$landingP: ($halfWidth - 135px);
+$landingP2: ($halfWidth - 100px);
+$tableCentered: ($fullWidth - $mLeft - $mRight);
+
+$darkGray: #1d1d1b;
+$midGray: #575756;
+$lightGray: #868686;
+
+
+// FULL WRAPPER
+*{
+	font-family: 'Avenir';
+}
+
+#fullWrap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#innerWrap{
+	position: absolute;
+	width: $fullWidth;
+	margin: auto;
+	left: 0; right: 0;
+	overflow: scroll;
+
+// HEADER
+	header{
+		position: relative;
+		width: 100%;
+		height: 160px;
+		margin: 0;
+		padding: 0;
+
+		nav{
+			@include fillContainer();
+
+			ul{
+				@include fillContainer();
+				margin: 0;
+				padding: 0;
+
+				li{
+					position: absolute;
+					list-style-type: none;
+					bottom: 32px;
+				}
+
+				.isoLogo{
+					left: $mLeft;
+				}
+
+				.logotype{
+					right: $mRight;
+				}
+			}
+		}
+	}
+
+// LANDING IMAGE AND PARAGRAPH
+	#landingWrap{
+		position: relative;
+		width: 100%;
+		height: auto;
+
+		.mainImg{
+			position: relative;
+			width: 100%;
+
+			img{
+				width: 100%;
+			}
+		}
+
+		.mainDescription{
+			position: relative;
+			width: $halfWidth;
+			height: 155px;
+			margin-left: auto;
+			margin-right: 0;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			text-align: right;
+			color: $midGray;
+
+			p{
+				position: relative;
+				float: right;
+				padding-right: $mRight;
+				margin: 0;
+				font-size: 9.5pt;
+				-webkit-font-smoothing: antialiased;
+			       -moz-font-smoothing: antialiased;
+			        -ms-font-smoothing: antialiased;
+			         -o-font-smoothing: antialiased;
+			            font-smoothing: antialiased;
+			}
+
+			.firstParagraph{
+				width: $landingP;
+				margin-bottom: 20px;
+			}
+			.secondParagraph{
+				width: $landingP2;
+			}
+		}
+	}
+
+// PROJECTS GRID
+	#projectsWrap{
+		position: relative;
+		width: $tableCentered;
+		margin-left: $mLeft;
+		margin-right: $mRight;
+		margin-bottom: 75px;
+
+		.ROrow{
+			position: relative;
+			width: 100%;
+
+			.ROcol{
+				@include displayLeft();
+				height: 100%;
+
+				img{
+					position: absolute;
+					@include fillContainer();
+				}
+
+				.proName{
+					cursor: pointer;
+					position: absolute;
+					@include fillContainer();
+					background-color: $darkGray; // Fallback
+					background-color: rgba(29,29,27,0.7);
+					color: #fff;
+					@include opacity(0);
+					@include transitions(all, 0.6s, ease-out);
+
+					&:hover{
+						@include opacity(1);
+					}
+
+					.proTitle{
+						position: absolute;
+						width: 100%;
+						height: 15px;
+						margin: auto;
+						top: 0; bottom: 0;
+
+						font-size: 9pt;
+						letter-spacing: 5px;
+						font-weight: lighter;
+						text-align: center;
+						text-transform: uppercase;
+						line-height: 15px;
+						-webkit-font-smoothing: antialiased;
+					       -moz-font-smoothing: antialiased;
+					        -ms-font-smoothing: antialiased;
+					         -o-font-smoothing: antialiased;
+					            font-smoothing: antialiased;
+					}
+				}
+			}
+
+
+			.midCol{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.leftCol{
+				margin-right: 10px;
+			}
+
+			.thirdCol{
+				width: 300px;
+			}
+
+			.secondCol{
+				width: 610px;
+			}
+		}
+
+		.xsHRow{
+			height: 193px;
+		}
+		.smHRow{
+			height: 247px;
+		}
+		.mdHRow{
+			height: 261px;
+		}
+		.lgHRow{
+			height: 450px;
+		}
+		.mainRow{
+			margin-bottom: 10px;
+		}
+	}
+
+// FOOTER
+	footer{
+		position: relative;
+		width: $tableCentered;
+		height: 55px;
+		margin-left: $mLeft;
+		margin-right: $mRight;
+		margin-bottom: 130px;
+		font-size: 9.5pt;
+
+		.contact{
+			position: absolute;
+			left: 0; bottom: 0;
+			color: $darkGray;
+
+			ul{
+				@include fillContainer();
+				margin: 0;
+				padding: 0;
+
+				li{
+					list-style-type: none;
+
+					a{
+						text-decoration: none;
+						color: $darkGray;
+
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+
+				.mailto{
+					margin-bottom: 2px;
+				}
+			}
+		}
+
+		.legal{
+			position: absolute;
+			right: 0; bottom: 0;
+			color: $lightGray;
+			-webkit-font-smoothing: antialiased;
+		       -moz-font-smoothing: antialiased;
+		        -ms-font-smoothing: antialiased;
+		         -o-font-smoothing: antialiased;
+		            font-smoothing: antialiased;
+		}
+	}
+}
+
+
+
+
+
+
+
+
