@@ -4,37 +4,15 @@
 #fullWrap {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: scroll; }
 
 #innerWrap {
   position: absolute;
   width: 1100px;
   margin: auto;
   left: 0;
-  right: 0;
-  overflow: scroll; }
-  #innerWrap header {
-    position: relative;
-    width: 100%;
-    height: 160px;
-    margin: 0;
-    padding: 0; }
-    #innerWrap header nav {
-      width: 100%;
-      height: 100%; }
-      #innerWrap header nav ul {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0; }
-        #innerWrap header nav ul li {
-          position: absolute;
-          list-style-type: none;
-          bottom: 32px; }
-        #innerWrap header nav ul .isoLogo {
-          left: 90px; }
-        #innerWrap header nav ul .logotype {
-          right: 90px; }
+  right: 0; }
   #innerWrap #landingWrap {
     position: relative;
     width: 100%;
@@ -152,42 +130,177 @@
       height: 450px; }
     #innerWrap #projectsWrap .mainRow {
       margin-bottom: 10px; }
-  #innerWrap footer {
+
+header {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  margin: 0;
+  padding: 0; }
+  header nav {
+    width: 100%;
+    height: 100%; }
+    header nav ul {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        position: absolute;
+        list-style-type: none;
+        bottom: 32px; }
+      header nav ul .logotype {
+        left: 90px; }
+      header nav ul .isoLogo {
+        right: 90px; }
+
+footer {
+  position: relative;
+  width: 920px;
+  height: 55px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 130px;
+  font-size: 9.5pt; }
+  footer .contact {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #1d1d1b; }
+    footer .contact ul {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+      footer .contact ul li {
+        list-style-type: none; }
+        footer .contact ul li a {
+          text-decoration: none;
+          color: #1d1d1b; }
+          footer .contact ul li a:hover {
+            text-decoration: underline; }
+      footer .contact ul .mailto {
+        margin-bottom: 2px; }
+  footer .legal {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #868686;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased; }
+
+#openedProjects {
+  position: absolute;
+  width: 1100px;
+  margin: auto;
+  left: 0;
+  right: 0; }
+  #openedProjects header {
+    height: 120px; }
+    #openedProjects header nav ul .closeProjects {
+      left: 90px;
+      cursor: pointer;
+      -webkit-transition: all 0.4s ease-out;
+      -moz-transition: all 0.4s ease-out;
+      -ms-transition: all 0.4s ease-out;
+      -o-transition: all 0.4s ease-out;
+      transition: all 0.4s ease-out; }
+      #openedProjects header nav ul .closeProjects:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+  #openedProjects #carousel {
     position: relative;
-    width: 920px;
-    height: 55px;
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-bottom: 130px;
-    font-size: 9.5pt; }
-    #innerWrap footer .contact {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      color: #1d1d1b; }
-      #innerWrap footer .contact ul {
-        width: 100%;
+    width: 100%; }
+    #openedProjects #carousel .projectHolder {
+      position: relative;
+      width: 100%;
+      height: 520px;
+      margin-top: 40px; }
+      #openedProjects #carousel .projectHolder .proPic img {
+        width: 100%; }
+      #openedProjects #carousel .projectHolder .smPic {
+        position: relative;
+        width: 460px;
+        margin-left: 90px;
+        height: 100%; }
+      #openedProjects #carousel .projectHolder .mdPic {
+        position: relative;
+        width: 920px;
+        margin-left: 90px;
+        height: 100%; }
+      #openedProjects #carousel .projectHolder .lgPic {
+        position: relative;
+        width: 1100px;
+        height: 100%; }
+    #openedProjects #carousel .navProject {
+      position: relative;
+      width: 100%;
+      height: 80px; }
+      #openedProjects #carousel .navProject ul {
+        width: 460px;
         height: 100%;
         margin: 0;
+        margin-left: 90px;
         padding: 0; }
-        #innerWrap footer .contact ul li {
-          list-style-type: none; }
-          #innerWrap footer .contact ul li a {
-            text-decoration: none;
-            color: #1d1d1b; }
-            #innerWrap footer .contact ul li a:hover {
-              text-decoration: underline; }
-        #innerWrap footer .contact ul .mailto {
-          margin-bottom: 2px; }
-    #innerWrap footer .legal {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      color: #868686;
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-      -ms-font-smoothing: antialiased;
-      -o-font-smoothing: antialiased;
-      font-smoothing: antialiased; }
+        #openedProjects #carousel .navProject ul li {
+          height: 100%;
+          list-style-type: none;
+          position: relative;
+          float: left;
+          display: inline-block;
+          vertical-align: top;
+          zoom: 1;
+          /* Fix for IE7 */
+          *display: inline;
+          /* Fix for IE7 */ }
+          #openedProjects #carousel .navProject ul li a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            #openedProjects #carousel .navProject ul li a img {
+              position: absolute;
+              margin: auto;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0; }
+        #openedProjects #carousel .navProject ul .changeProject {
+          width: 40px;
+          -webkit-transition: all 0.4s ease-out;
+          -moz-transition: all 0.4s ease-out;
+          -ms-transition: all 0.4s ease-out;
+          -o-transition: all 0.4s ease-out;
+          transition: all 0.4s ease-out; }
+        #openedProjects #carousel .navProject ul .backArrow:hover {
+          -webkit-transform: translate(-5px, 0);
+          -moz-transform: translate(-5px, 0);
+          -ms-transform: translate(-5px, 0);
+          -o-transform: translate(-5px, 0);
+          transform: translate(-5px, 0); }
+        #openedProjects #carousel .navProject ul .nextArrow:hover {
+          -webkit-transform: translate(5px, 0);
+          -moz-transform: translate(5px, 0);
+          -ms-transform: translate(5px, 0);
+          -o-transform: translate(5px, 0);
+          transform: translate(5px, 0); }
+        #openedProjects #carousel .navProject ul #currentProject {
+          width: 380px;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 83px;
+          font-size: 15pt;
+          letter-spacing: 4px; }
+  #openedProjects footer {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=styling.css.map */
