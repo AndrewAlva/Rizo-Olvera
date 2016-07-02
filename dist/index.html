@@ -3,31 +3,65 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>RIZO+OLVERA | Arquitectura Interiorismo</title>
-        <meta name="description" content="">
+        <title>RIZO + OLVERA | Arquitectura Interiorismo</title>
+        <meta name="description" content="Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- PLACE ORIGINAL FACEBOOK META TAGS -->
+        <meta property="fb:admins" content="100004419218412" />
+        <meta property="fb:app_id" content="1656167044708100" />
+        
+        <meta property="og:title" content="RIZO + OLVERA | Arquitectura Interiorismo" />
+        <meta property="og:site_name" content="RIZO + OLVERA | Arquitectura Interiorismo"/>
+        <meta property="og:url" content="http://rizo-olvera.com/" />
+        <meta property="og:description" content="Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización." />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_MX" />
+        <meta property="og:image" content="http://rizo-olvera.com/img/rizo_olvera_share.jpg" />
+        <!-- END FB META TAGS -->
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/styling.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1656167044708100',
+              xfbml      : true,
+              version    : 'v2.6'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div id="fullWrap">
+
+            <div id="loaderRO">
+                <div class="loadBar"></div>
+                <img src="img/brand/RO_logo.jpg" alt="RIZO + OLVERA | Arquitectura Interiorismo" title="RIZO + OLVERA | Arquitectura Interiorismo">
+            </div>
+
+
             <div id="innerWrap">
                 <header>
                     <nav>
                         <ul>
                             <li class="logotype">
-                                
                                 <img src="img/brand/RO_logo.jpg" alt="RIZO + OLVERA | Arquitectura Interiorismo" title="RIZO + OLVERA | Arquitectura Interiorismo">
-                                
                             </li>
 
                             <li class="isoLogo">
@@ -46,11 +80,17 @@
 
                     <div class="mainDescription">
                         <p class="firstParagraph">
-                            Dedicados a la realización de estudios, proyectos y obras del ramo de la arquitectura, diseño interior, obra civil, equipamiento y urbanización. Integrando colaboradores en ramos como el diseño industrial y el gráfico para atender las diferentes disciplinas y servicios conexos.
+                            Dedicados a la realización de estudios, proyectos y obras del ramo <br>
+                            de la arquitectura, diseño interior, obra civil, equipamiento y urbanización. <br>
+                            Integrando colaboradores en ramos como el diseño industrial <br>
+                            y el gráfico para atender las diferentes disciplinas y servicios conexos.
                         </p>
 
                         <p class="secondParagraph">
-                            La firma se encabeza por el Arq. Ernesto Rizo y la Arq. Amparo G. Olvera que se han preocupado por desarrollar proyectos y obra habitacional, comercial, turística e industrial siempre teniendo en mente la creación de espacios, que viven y comparten con las necesidades y deseos de sus usuarios.
+                            La firma se encabeza por el Arq. Ernesto Rizo y la Arq. Amparo G. Olvera <br>
+                            que se han preocupado por desarrollar proyectos y obra habitacional, comercial, <br>
+                            turística e industrial siempre teniendo en mente la creación de espacios, que <br>
+                            viven y comparten con las necesidades y deseos de sus usuarios.
                         </p>
                     </div>
                 </section>
@@ -61,25 +101,25 @@
                     <div class="ROrow  xsHRow mainRow">
                         <div class="ROcol thirdCol">
                             <img src="img/projects/min/las_lomas_01_min.jpg" alt="Casa Las Lomas" title="Casa Las Lomas">
-                            <div class="proName">
-                                <div class="proTitle">
+                            <div id="openPro_1" class="proName" backCount="12" nextCount="2" proName="Casa Las Lomas" imgSize="lg" imgSrc="las_lomas_01">
+                                <div class="proTitle tabletTwoLines">
                                     Casa Las Lomas
                                 </div>
                             </div>
                         </div>
                         <div class="ROcol thirdCol midCol">
-                            <img src="img/projects/min/valle_01_min.jpg" alt="Casa Valle" title="Casa Valle">
-                            <div class="proName">
-                                <div class="proTitle">
-                                    Casa Valle
+                            <img src="img/projects/min/san_carlos_01_min.jpg" alt="Casa San Carlos" title="Casa San Carlos">
+                            <div id="openPro_2" class="proName" backCount="1" nextCount="3" proName="San Carlos" imgSize="lg" imgSrc="san_carlos_01">
+                                <div class="proTitle tabletTwoLines">
+                                    Casa San Carlos
                                 </div>
                             </div>
                         </div>
                         <div class="ROcol thirdCol">
-                            <img src="img/projects/min/valle_02_min.jpg" alt="Casa Valle" title="Casa Valle">
-                            <div class="proName">
+                            <img src="img/projects/min/aqua_01_min.jpg" alt="Casa Aqua" title="Casa Aqua">
+                            <div id="openPro_3" class="proName" backCount="2" nextCount="4" proName="Casa Aqua" imgSize="lg" imgSrc="aqua_01">
                                 <div class="proTitle">
-                                    Casa Valle
+                                    Casa Aqua
                                 </div>
                             </div>
                         </div>
@@ -90,7 +130,7 @@
                     <div class="ROrow mdHRow mainRow">
                         <div class="ROcol secondCol">
                             <img src="img/projects/min/chapala_01_min.jpg" alt="Casa Chapala" title="Casa Chapala">
-                            <div class="proName">
+                            <div id="openPro_4" class="proName" backCount="3" nextCount="5" proName="Casa Chapala" imgSize="lg" imgSrc="chapala_01">
                                 <div class="proTitle">
                                     Casa Chapala
                                 </div>
@@ -101,21 +141,18 @@
 
 
                     <div class="ROrow xsHRow mainRow">
-                        <div class="ROcol thirdCol">
-                            
-                        </div>
-                        <div class="ROcol thirdCol midCol">
-                            <img src="img/projects/min/velasco_01_min.jpg" alt="Casa Velasco" title="Casa Velasco">
-                            <div class="proName">
-                                <div class="proTitle">
-                                    Casa Velasco
+                        <div class="ROcol twoAndHalfCol">
+                            <img src="img/projects/min/saltillo_min.jpg" alt="Plaza Comercial Saltillo" title="Plaza Comercial Saltillo">
+                            <div id="openPro_5" class="proName" backCount="4" nextCount="6" proName="Plaza Comercial Saltillo" imgSize="lg" imgSrc="saltillo">
+                                <div class="proTitle tabletTwoLines mobileThreeLines">
+                                    Plaza Comercial Saltillo
                                 </div>
                             </div>
                         </div>
                         <div class="ROcol thirdCol">
-                            <img src="img/projects/min/velasco_02_min.jpg" alt="Casa Velasco" title="Casa Velasco">
-                            <div class="proName">
-                                <div class="proTitle">
+                            <img src="img/projects/min/velasco_01_min.jpg" alt="Casa Velasco" title="Casa Velasco">
+                            <div id="openPro_6" class="proName" backCount="5" nextCount="7" proName="Casa Velasco" imgSize="md" imgSrc="velasco_01">
+                                <div class="proTitle mobileTwoLines">
                                     Casa Velasco
                                 </div>
                             </div>
@@ -126,37 +163,37 @@
 
                     <div class="ROrow lgHRow mainRow">
                         <div class="ROcol thirdCol leftCol">
-                            <img src="img/projects/min/valle_02_01_min.jpg" alt="Valle 02" title="Valle 02">
-                            <div class="proName">
-                                <div class="proTitle">
-                                    Valle 02
+                            <img src="img/projects/min/san_carlos_02_min.jpg" alt="Casa San Carlos" title="Casa San Carlos">
+                            <div id="openPro_7" class="proName" backCount="6" nextCount="8" proName="Casa San Carlos" imgSize="sm" imgSrc="san_carlos_02">
+                                <div class="proTitle tabletTwoLines">
+                                    Casa San Carlos
                                 </div>
                             </div>
                         </div>
                         <div class="ROcol secondCol">
                             <div class="ROrow smHRow mainRow">
                                 <div class="ROcol secondCol">
-                                    <img src="img/projects/min/tapalpa_pr_01_min.jpg" alt="Casa Tapalpa PR" title="Casa Tapalpa PR">
-                                    <div class="proName">
+                                    <img src="img/projects/min/tapalpa_01_min.jpg" alt="Casa Tapalpa" title="Casa Tapalpa">
+                                    <div id="openPro_8" class="proName" backCount="7" nextCount="9" proName="Casa Tapalpa" imgSize="lg" imgSrc="tapalpa_01">
                                         <div class="proTitle">
-                                            Casa Tapalpa PR
+                                            Casa Tapalpa
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="ROrow xsHRow">
                                 <div class="ROcol thirdCol leftCol">
-                                    <img src="img/projects/min/tec_01_min.jpg" alt="Casa del Tec" title="Casa del Tec">
-                                    <div class="proName">
-                                        <div class="proTitle">
-                                            Casa del Tec
+                                    <img src="img/projects/min/san_alfonso_01_min.jpg" alt="Casa San Alfonso" title="Casa San Alfonso">
+                                    <div id="openPro_9" class="proName" backCount="8" nextCount="10" proName="Casa San Alfonso" imgSize="md" imgSrc="san_alfonso_01">
+                                        <div class="proTitle tabletTwoLines">
+                                            Casa San Alfonso
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ROcol thirdCol">
                                     <img src="img/projects/min/terraza_arbol_01_min.jpg" alt="Terraza Árbol" title="Terraza Árbol">
-                                    <div class="proName">
-                                        <div class="proTitle">
+                                    <div id="openPro_10" class="proName" backCount="9" nextCount="11" proName="Terraza Árbol" imgSize="md" imgSrc="terraza_arbol_01">
+                                        <div class="proTitle tabletTwoLines">
                                             Terraza Árbol
                                         </div>
                                     </div>
@@ -173,17 +210,17 @@
                         </div>
                         <div class="ROcol thirdCol midCol">
                             <img src="img/projects/min/canchas_01_min.jpg" alt="Canchas VC" title="Canchas VC">
-                            <div class="proName">
-                                <div class="proTitle">
+                            <div id="openPro_11" class="proName" backCount="10" nextCount="12" proName="Canchas VC" imgSize="md" imgSrc="canchas_01">
+                                <div class="proTitle mobileTwoLines">
                                     Canchas VC
                                 </div>
                             </div>
                         </div>
                         <div class="ROcol thirdCol">
-                            <img src="img/projects/min/valle_03_min.jpg" alt="Casa Valle" title="Casa Valle">
-                            <div class="proName">
-                                <div class="proTitle">
-                                    Casa Valle
+                            <img src="img/projects/min/las_lomas_02_min.jpg" alt="Casa Las Lomas" title="Casa Las Lomas">
+                            <div id="openPro_12" class="proName" backCount="11" nextCount="1" proName="Casa Las Lomas" imgSize="md" imgSrc="las_lomas_02">
+                                <div class="proTitle tabletTwoLines">
+                                    Casa Las Lomas
                                 </div>
                             </div>
                         </div>
@@ -197,7 +234,7 @@
                         <ul>
                             <li>Guadalajara, Jalisco</li>
                             <li class="mailto"><a href="mailto:contacto@rizo-olvera.com">contacto@rizo-olvera.com</a></li>
-                            <li>t. +52 (33) 31 22 65 08</li>
+                            <li><a href="tel:+52(33)31226508">t. +52 (33) 31 22 65 08</a></li>
                         </ul>
                     </div>
 
@@ -207,63 +244,80 @@
                 </footer>
             </div>
 
-            <!-- HIDDEN UNTILL JS INTERACTION IMPLEMENTED -->
-            <section id="openedProjects" style="display:none">
-                <header>
-                    <nav>
-                        <ul>
-                            <li class="closeProjects">
-                                <img src="img/icons/close.png" alt="Close Projects" title="Close Projects">
-                            </li>
+            <section id="openedProjects" class="hiddenModal crystalModal">
+                <div class="centeredWrapper">
+                    <header>
+                        <nav>
+                            <ul>
+                                <li id="closeProjectModal" class="closeProjects pmeIntro crystalModal">
+                                    <img src="img/icons/close.png" alt="Close Projects" title="Close Projects">
+                                </li>
 
-                            <li class="isoLogo">
-                                <img src="img/brand/RO_iso.jpg" alt="R+O" title="RIZO + OLVERA">
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+                                <li class="isoLogo pmeIntro crystalModal">
+                                    <img src="img/brand/RO_iso.jpg" alt="R+O" title="RIZO + OLVERA">
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
 
 
-                <section id="carousel">
-                    <div class="projectHolder">
-                        <div class="mdPic proPic">
-                            <img src="img/projects/full/las_lomas_01.jpg" alt="Casa Las Lomas" title="Casa Las Lomas">
+                    <section id="carousel">
+                        <div class="projectHolder pmeIntro crystalModal">
+                            <div class="proPic">
+                                <img id="projectImg" class="nowProject" src="" alt="" title="">
+                            </div>
                         </div>
-                    </div>
 
-                    <nav class="navProject">
-                        <ul>
-                            <li class="changeProject backArrow">
-                                <a href="#"><img src="img/icons/left.png" alt="Back Project" title="Back"></a>
-                            </li>
+                        <nav class="navProject">
+                            <ul>
+                                <li class="changeProject backArrow">
+                                    <a href="#"><img src="img/icons/left.png" alt="Back Project" title="Back"></a>
+                                </li>
 
-                            <li id="currentProject">Lorem Mbrt</li>
+                                <li id="currentProject" class="pmeIntro nowProject crystalModal">
+                                    Lorem Mbrt
+                                </li>
 
-                            <li class="changeProject nextArrow">
-                                <a href="#"><img src="img/icons/right.png" alt="Next Project" title="Next"></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
+                                <li class="changeProject nextArrow">
+                                    <a href="#"><img src="img/icons/right.png" alt="Next Project" title="Next"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
 
 
-                <footer>
-                    <div class="contact">
-                        <ul>
-                            <li>Guadalajara, Jalisco</li>
-                            <li class="mailto"><a href="mailto:contacto@rizo-olvera.com">contacto@rizo-olvera.com</a></li>
-                            <li>t. +52 (33) 31 22 65 08</li>
-                        </ul>
-                    </div>
+                    <footer>
+                        <div class="contact">
+                            <ul>
+                                <li class="pmeIntro crystalModal">Guadalajara, Jalisco</li>
+                                <li class="mailto pmeIntro crystalModal"><a href="mailto:contacto@rizo-olvera.com">contacto@rizo-olvera.com</a></li>
+                                <li class="pmeIntro crystalModal"><a href="tel:+52(33)31226508">t. +52 (33) 31 22 65 08</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="legal">
-                        RIZO + OLVERA Arquitectura / Interiorismo. Todos los derechos reservados. 2016
-                    </div>
-                </footer>
+                        <div class="legal pmeIntro crystalModal">
+                            RIZO + OLVERA Arquitectura / Interiorismo. Todos los derechos reservados. 2016
+                        </div>
+                    </footer>
+                </div>
             </section>
         </div>
         
-
+        <div id="preloaderImgs">
+            <img src="img/projects/full/aqua_01.jpg" alt="Casa Aqua">
+            <img src="img/projects/full/canchas_01.jpg" alt="Canchas VC">
+            <img src="img/projects/full/chapala_01.jpg" alt="Casa Chapala">
+            <img src="img/projects/full/las_lomas_01.jpg" alt="Casa Las Lomas">
+            <img src="img/projects/full/las_lomas_02.jpg" alt="Casa Las Lomas">
+            <img src="img/projects/full/saltillo.jpg" alt="Plaza Comercial Saltillo">
+            <img src="img/projects/full/san_alfonso_01.jpg" alt="Casa San Alfonso">
+            <img src="img/projects/full/san_carlos_01.jpg" alt="Casa San Carlos">
+            <img src="img/projects/full/san_carlos_02.jpg" alt="Casa San Carlos">
+            <img src="img/projects/full/tapalpa_01.jpg" alt="Casa Tapalpa">
+            <img src="img/projects/full/terraza_arbol_01.jpg" alt="Terraza Árbol">
+            <img src="img/projects/full/velasco_01.jpg" alt="Casa Velasco">
+        </div>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -271,12 +325,14 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-79153292-3', 'auto');
+          ga('send', 'pageview');
+
         </script>
     </body>
 </html>
